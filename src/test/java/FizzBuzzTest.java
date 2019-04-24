@@ -6,6 +6,11 @@ class FizzBuzzTest {
 
     @Test
     void shouldReturnOne() {
-        Assertions.assertEquals(1, FizzBuzz.returnOne());
+        Assertions.assertEquals("1", FizzBuzz.returnValue(1));
+    }
+
+    @Test
+    void shouldReturnTwo() {
+        Assertions.assertEquals("2", FizzBuzz.returnValue(2));
     }
 }
