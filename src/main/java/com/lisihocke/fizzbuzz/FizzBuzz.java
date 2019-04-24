@@ -2,7 +2,9 @@ package com.lisihocke.fizzbuzz;
 
 public class FizzBuzz {
     public static void main(String[] args) {
-        System.out.println(returnValue(1));
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(returnValue(i));
+        }
     }
 
     public static String returnValue(int number){
