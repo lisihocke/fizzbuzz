@@ -5,12 +5,17 @@ import org.junit.jupiter.api.Test;
 class FizzBuzzTest {
 
     @Test
-    void shouldReturnOne() {
+    void oneShouldReturnOne() {
         Assertions.assertEquals("1", FizzBuzz.returnValue(1));
     }
 
     @Test
-    void shouldReturnTwo() {
+    void twoShouldReturnTwo() {
         Assertions.assertEquals("2", FizzBuzz.returnValue(2));
+    }
+
+    @Test
+    void threeShouldReturnFizz() {
+        Assertions.assertEquals("Fizz", FizzBuzz.returnValue(3));
     }
 }
