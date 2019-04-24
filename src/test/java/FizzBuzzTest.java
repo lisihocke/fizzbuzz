@@ -23,4 +23,9 @@ class FizzBuzzTest {
     void fourShouldReturnFour() {
         Assertions.assertEquals("4", FizzBuzz.returnValue(4));
     }
+
+    @Test
+    void fiveShouldReturnBuzz() {
+        Assertions.assertEquals("Buzz", FizzBuzz.returnValue(5));
+    }
 }
