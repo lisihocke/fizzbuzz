@@ -28,4 +28,14 @@ class FizzBuzzTest {
     void fifteenShouldReturnFizzBuzz() {
         Assertions.assertEquals("FizzBuzz", FizzBuzz.returnValue(15));
     }
+
+    @Test
+    void zeroShouldBeOutOfRange() {
+        Assertions.assertEquals("The number 0 is out of range, please provide a number between 1 and 100 (both inclusive).", FizzBuzz.returnValue(0));
+    }
+
+    @Test
+    void hundredAndOneShouldBeOutOfRange() {
+        Assertions.assertEquals("The number 101 is out of range, please provide a number between 1 and 100 (both inclusive).", FizzBuzz.returnValue(101));
+    }
 }
